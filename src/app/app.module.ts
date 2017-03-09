@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import {Ng2CompleterModule} from "ng2-completer/index";
 
 @NgModule({
   declarations: [
@@ -12,6 +13,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
+    Ng2CompleterModule,
+
     HttpModule
   ],
   providers: [],

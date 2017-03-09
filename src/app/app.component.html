@@ -1,3 +1,10 @@
 <h1>
   {{title}}
 </h1>
+<h1>Search color</h1>
+searchStr{{searchStr}}
+<ng2-completer
+  (selected)="selected()"
+  [(ngModel)]="searchStr" [datasource]="dataService" [minSearchLength]="0"></ng2-completer>
+<h1>Search captain</h1>
+<ng2-completer [(ngModel)]="captain" [datasource]="captains" [minSearchLength]="0"></ng2-completer>
